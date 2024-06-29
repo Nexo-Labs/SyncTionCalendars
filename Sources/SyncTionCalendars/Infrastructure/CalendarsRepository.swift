@@ -80,7 +80,7 @@ final class CalendarsRepository: EKEventsRepository, FormRepository {
     static var scratchTemplate: FormTemplate {
         let style = FormModel.Style(
             formName: CalendarsFormService.shared.description,
-            icon: .static(CalendarsFormService.shared.icon),
+            icon: .static(CalendarsFormService.shared.icon, loadAsPng: false),
             color: Color.accentColor.rgba
         )
         let calendarsRange = RangeTemplate(
